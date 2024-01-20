@@ -1,4 +1,4 @@
-# Reame Generator
+# Readme Generator
 
 
  
@@ -6,7 +6,7 @@
 
 
 
-For a user to make a quick readme.md file.
+For the user to make a quick readme.md file.
 
 ## Table of Contents (Optional)
 
@@ -21,16 +21,18 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 npm install
 
-## Usage
+## The languages used in this project are:
+HTML,JavaScript,Node
 
 
 ## Credits
 
-Github profile: github.com/rmac598
+Github profile: github.com/rmca598
 
 ## License
-undefined
 
+MIT
+undefined
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)

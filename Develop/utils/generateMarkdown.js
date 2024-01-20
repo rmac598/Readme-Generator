@@ -1,7 +1,25 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  
+  if (license == "APACHE 2.0") {
+    return `![Static Badge](https://img.shields.io/badge/license-Apache2.0-brightgreen)`
+    
+  }
+  if (license == "MIT") {
+    return `![Static Badge](https://img.shields.io/badge/license-mit-brightgreen)`
+    
+  }
+  if (license == "GPL 3.0") {
+    return `![Static Badge](https://img.shields.io/badge/license-GPL3.0-brightgreen)`
+    
+  }
+  if (license == "BSD 3") {
+    return `![Static Badge](https://img.shields.io/badge/license-BSD3-brightgreen)`
+    
+  }
+  if (license == "None") {
+    return ``
+  }
 }
 
 // TODO: Create a function that returns the license link
@@ -24,7 +42,7 @@ function generateMarkdown(data) {
 
 
 
-${data.description};
+${data.description}
 
 ## Table of Contents (Optional)
 
@@ -37,23 +55,20 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-${data.install};
+${data.install}
 
-## Usage
+## The languages used in this project are:
+${data.language}
 
 
 ## Credits
 
-Github profile: ${data.github};
+Github profile: ${data.github}
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
+${data.license}
+${renderLicenseBadge(data.license.choices)}
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)

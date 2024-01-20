@@ -25,8 +25,19 @@ const questions = [{
         message: "What is your github address?"
 
     },
-
-
+    {
+        type: "checkbox",
+        name: "language",
+        message: "What languages did you use to make this project?",
+        choices: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'Node'],
+    },
+    {
+        type: "checkbox",
+        name: "license",
+        message: "What licenses were used for this project?",
+        choices: ['Apache 2.0', 'MIT', 'GPL 3.0', 'BSD 3' ],
+    }
+ 
 
 ];
 
@@ -47,7 +58,7 @@ function writeToFile(fileName, data) {
 async function init() {
     const answers = await inquirer.prompt(questions);
    
-    writeToFile('readme.md', answers);  
+    writeToFile('./New_readme/readme.md', answers);  
     
 }
 
